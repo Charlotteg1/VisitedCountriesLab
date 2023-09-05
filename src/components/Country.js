@@ -1,10 +1,14 @@
-const Country = ({country}) => {
+
+const Country = ({country, addNewCountry}) => {
+
+
     return(
         <>
         <p>{country.name.common}</p>
         <input
         type="checkbox"
-        value="Visited"
+        value={country.name.common}
+        onChange = {(event)=> addNewCountry(event.target.value)}
         />
         </>
     )
