@@ -1,0 +1,8 @@
+.allCountries {
+    text-align: left ;
+    float:left
+  }
+  
+  .visitedCountries{
+    float:right
+  }
