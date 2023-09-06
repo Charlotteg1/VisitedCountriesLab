@@ -5,7 +5,6 @@ const VisitedCountryList = ({ visitedCountry }) => {
         {visitedCountry.map((visitedCountry) => (
             <li>{visitedCountry}</li>
         ))}
-        
       </ul>
     </div>
   );

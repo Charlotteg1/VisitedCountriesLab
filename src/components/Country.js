@@ -1,7 +1,5 @@
 
 const Country = ({country, addNewCountry}) => {
-
-
     return(
         <>
         <p>{country.name.common}</p>

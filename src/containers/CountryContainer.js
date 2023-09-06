@@ -15,7 +15,7 @@ const CountryContainer = () =>{
     }
 
 
-  const handleAddNewCountry = (country) => {
+  const addNewCountry = (country) => {
       setVisitedCountries([...visitedCountries, country]);
   };
 
@@ -27,12 +27,12 @@ const CountryContainer = () =>{
     return (
         <div id="container">
             <div className="allCountries">
-                <p>All Countries</p>
-                { countries ? <CountryList countries={countries} addNewCountry={handleAddNewCountry}/> : <p>loading..</p>}
+                <h2>All Countries</h2>
+                { countries ? <CountryList countries={countries} addNewCountry={addNewCountry}/> : <p>loading..</p>}
             </div>
             <div className="visitedCountries">
-                <p>Visited Countries</p>
-                {visitedCountries.length > 0 ? <VisitedCountryList visitedCountry={visitedCountries} />:<p>Please tick countries you have visited</p>}
+                <h2>Visited Countries</h2>
+                {visitedCountries.length > 0 ? <VisitedCountryList visitedCountry={visitedCountries} />:<h3>Please tick countries you have visited</h3>}
                 <p>Number of Countries Visited: {visitedCountries.length}/250</p>
                 <p>Percentage of World Visited: {Math.round((visitedCountries.length/250) *100)}%</p>
             </div>
